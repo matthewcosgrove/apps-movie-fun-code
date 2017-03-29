@@ -7,10 +7,15 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/albums?useSSL=false
     username: root
+    password: root
 
 logging.level:
   root: WARN
   org.superbiz.moviefun: DEBUG
+
+security:
+  basic:
+    enabled: false
 
 s3:
   accessKey: <access key id>
