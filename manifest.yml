@@ -6,6 +6,11 @@ applications:
   path: applications/album-service/build/libs/album-service-1.1.0-SNAPSHOT.jar
   services:
   - album-database
+  env:
+    S3_ACCESSKEY: AKIAJT36K5JFHDW4V74Q
+    S3_BUCKETNAME: cf-a654c8ab-7835-4d04-9ef6-241002a9d3ef
+    S3_ENDPOINTURL: http://s3.amazonaws.com
+    S3_SECRETKEY: rAfYLyG7n2XcRUyOH+pTTOj49enJa7MZeP1avYlS
 - name: movie-service
   path: applications/movie-service/build/libs/movie-service-1.1.0-SNAPSHOT.jar
   services:
@@ -13,5 +18,9 @@ applications:
 - name: movie-fun-app
   path: applications/movie-fun-app/build/libs/movie-fun-app-1.1.0-SNAPSHOT.war
   env:
-    ALBUMS_URL: http://album-service.cfapps-02.haas-66.pez.pivotal.io/albums
-    MOVIES_URL: http://movie-service.cfapps-02.haas-66.pez.pivotal.io/movies
+    ALBUMS_URL: http://album-service.cfapps-01.haas-66.pez.pivotal.io/albums
+    MOVIES_URL: http://movie-service.cfapps-01.haas-66.pez.pivotal.io/movies
+    S3_ACCESSKEY: AKIAJT36K5JFHDW4V74Q
+    S3_BUCKETNAME: cf-a654c8ab-7835-4d04-9ef6-241002a9d3ef
+    S3_ENDPOINTURL: http://s3.amazonaws.com
+    S3_SECRETKEY: rAfYLyG7n2XcRUyOH+pTTOj49enJa7MZeP1avYlS
