@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/movies")
+//@RequestMapping("/movies")
+@RequestMapping("/")
 public class MoviesController {
 
     private MoviesRepository moviesRepository;
